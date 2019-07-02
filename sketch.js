@@ -106,12 +106,10 @@ function draw() {
   // For each pose detected, loop through all the keypoints
     shapeys.push(new Shape());
 shapeys.push(new Shape());
- if (poses[i].pose.keypoints[10].score > .20) {
-    shapeys[i].show(poses[i].pose.keypoints[9].position.x, poses[i].pose.keypoints[9].position.y);
+ if (poses[i].pose.keypoints[1].score > .20) {
+    shapeys[i].show(poses[i].pose.keypoints[1].position.x, poses[i].pose.keypoints[1].position.y);
   } 
-if (poses[i].pose.keypoints[9].score > .20)  {
-       shapeys[i].show(poses[i].pose.keypoints[10].position.x, poses[i].pose.keypoints[10].position.y);
-    }
+
     
   
 }
