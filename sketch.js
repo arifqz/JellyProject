@@ -1,11 +1,6 @@
 var sound;
 
-function preload()
-{
-  // initialize sound
-  sound = loadSound("audio/impulses/ethereal.wav");
-  console.log('sound loaded');
-}
+
 
 let video;
 let poseNet;
@@ -35,22 +30,8 @@ var flowfield;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  video = createCapture(VIDEO);
-  video.hide();
-  video.size(windowWidth, windowHeight);
-  poseNet = ml5.poseNet(video,"multiple", modelReady);
-  poseNet.flipHorizontal = true;
-  poseNet.on('pose', (results) => {
-    poses = [];
-    for (let i = 0; i < results.length; i++) {
-      if (poses) {
-        let poseint = results[i].pose.score;
-        if (poseint > .3) {
-          poses.push(results[i]);
-        }
-      }
-    }
-  });
+ 
+
   flowfield = new FlowField(20);
   for (let i = 0; i < 25; i++){
     proto.push(new protozoa());
@@ -65,15 +46,6 @@ function mousePressed() {
 
 }
 
-function modelReady() {
-  console.log('model ready');
-}
-
-function playsound() {
-  if(sound.isPlaying() == false) {
-sound.play();
-  }
-}
  
 function stopsound() 
 {
