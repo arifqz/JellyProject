@@ -1,4 +1,3 @@
-var sound;
 
 
 
@@ -47,14 +46,7 @@ function mousePressed() {
 }
 
  
-function stopsound() 
-{
-  if(sound.isPlaying() == true) 
-  {
-    sound.pause();
-  } 
 
-}
 
 function draw() {
   background(0);
