@@ -42,7 +42,7 @@ function mousePressed() {
 
 }
 function pauseSketch() {
-  if (location.hash === '?frame') {
+  if (location.hash === '#?frame') {
     noLoop();
   }
 }
