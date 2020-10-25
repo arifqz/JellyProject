@@ -1,6 +1,3 @@
-
-
-
 let video;
 let poseNet;
 let poses = [];
@@ -45,11 +42,7 @@ function mousePressed() {
 
 }
 
-function pauseSketch() {
-  if (location.hash === '#?frame') {
-    noLoop();
-   console.log('pause sketch has run');
-  } 
+ 
 
 
 function draw() {
@@ -443,5 +436,4 @@ playsound();
 return true;
     }
   }
-}
 }
