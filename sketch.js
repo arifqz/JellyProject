@@ -98,6 +98,8 @@ shapeys.push(new Shape());
   for (var i = 0; i < proto.length; i++) {
   proto[i].render();
   }
+  
+  pauseSketch();
 }
 
 
