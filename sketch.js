@@ -45,7 +45,11 @@ function mousePressed() {
 
 }
 
- 
+function pauseSketch() {
+  if (location.hash === '#?frame') {
+    noLoop();
+   console.log('pause sketch has run');
+  } 
 
 
 function draw() {
@@ -64,7 +68,7 @@ function draw() {
 //   }
 //   text(int(frameRate()),30,40);
 //   pop();
-
+pauseSketch();
   shapeys = [];
   for (let i = 0; i < poses.length; i++) {
   // For each pose detected, loop through all the keypoints
