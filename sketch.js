@@ -41,7 +41,7 @@ function mousePressed() {
  shape.push(new Blobbytent(random(1, width), random(1, height)));
 
 }
-function pausesketch() {
+function pauseSketch() {
   if (location.hash === '?frame') {
     noLoop();
   }
