@@ -425,10 +425,10 @@ update(){
    this.pos.add(this.vel); 
   }
 edges() {
-    if (this.pos.x < -this.r) {this.pos.x = width + this.r}
-    if (this.pos.y < -this.r) {this.pos.y = height + this.r}
-    if (this.pos.x > width + this.r) {this.pos.x = -this.r}
-    if (this.pos.y > height + this.r) {this.pos.y = -this.r}
+    if (this.pos.x < -this.r) {this.pos.x = width + 2*this.r}
+    if (this.pos.y < -this.r) {this.pos.y = height + 2*this.r}
+    if (this.pos.x > width + this.r) {this.pos.x = -2*this.r}
+    if (this.pos.y > height + this.r) {this.pos.y = -2*this.r}
   }
 intersects(object2) {
     var ds = p5.Vector.dist(this.pos, object2.pos);
