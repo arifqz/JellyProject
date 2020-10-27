@@ -372,10 +372,10 @@ this.applyForce(steer);
 
   edges() {
      
-    if (this.pos.x < 0 - 100) {this.pos.x = windowWidth; this.pos.y = random(windowHeight);};
-    if (this.pos.y < 0 - 100) {this.pos.y = windowHeight;  this.pos.y = random(windowHeight);};
-    if (this.pos.x > windowWidth + 100) {this.pos.x = 0 };
-    if (this.pos.y > windowHeight + 100 ) {this.pos.y = 0 - 100; this.pos.x = random(windowHeight);};
+    if (this.pos.x < 0 - 100) {this.pos.x = 100 + windowWidth;};
+    if (this.pos.y < 0 - 100) {this.pos.y = 100 + windowHeight;};
+    if (this.pos.x > windowWidth + 100) {this.pos.x = 0 - 100};
+    if (this.pos.y > windowHeight + 100 ) {this.pos.y = 0 - 100;};
    
   }
 }
