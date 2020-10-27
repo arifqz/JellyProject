@@ -86,6 +86,7 @@ shapeys.push(new Shape());
     shape[i].follow(flowfield);
     shape[i].edges();
     shape[i].applyBehaviorsSeparate(shape);
+    shape[i].applyBehaviorsSeparate(proto);
     shape[i].makeLegs();
     for (let k = 0; k < shapeys.length; k++){
     shape[i].applyBehaviorsFlee(shapeys[k]);
